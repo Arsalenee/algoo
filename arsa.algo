@@ -1,0 +1,22 @@
+ALGORITHM checkpoint
+VAR
+    C: CHAR;
+    nbv:INTEGER:=0 ;
+    nbc:INTEGER ;
+    nbm:INTEGER ;
+BEGIN
+nbc:=0;
+REPEAT
+    read (C)
+    nbc:=nbc+1 ;
+    IF(C='a' OR C='i' OR C='o' OR c='y' OR c='u' OR C='e' OR C='A' OR C='I' OR C='O' OR C='Y' OR C='U' OR C='E')
+    nbv:=nbm+1
+    END_IF
+    IF (c=' ') THEN
+    nbm:=nbm+1
+
+    END_IF
+
+UNTIL ( c='.')
+  WRITE( nbc,nbm,nbv)
+END
